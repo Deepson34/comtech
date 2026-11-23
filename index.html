@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comtech Concern | IT Solutions, Software & Network Services</title>
+<meta name="description" content="Comtech Concern delivers reliable IT solutions for businesses: custom software, web development, networking, cybersecurity and managed IT support. Talk to our team today.">
+<link rel="canonical" href="https://www.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Comtech Concern | IT Solutions, Software & Network Services">
+<meta property="og:description" content="Custom software, web development, networking, cybersecurity and managed IT support for growing businesses.">
+<meta property="og:url" content="https://www.example.com/">
+<meta name="theme-color" content="#0b3d91">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Comtech Concern",
+  "url": "https://www.example.com/",
+  "logo": "https://www.example.com/logo.png",
+  "description": "IT solutions company offering software development, web design, networking, cybersecurity and managed IT support.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+977-1-0000000",
+    "contactType": "sales",
+    "email": "info@example.com"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --blue:#0b3d91;
+    --blue-dark:#082c6b;
+    --accent:#00b8d9;
+    --ink:#14213d;
+    --muted:#5b6578;
+    --bg:#f5f8fc;
+    --white:#fff;
+    --radius:14px;
+    --shadow:0 8px 28px rgba(11,61,145,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .container{width:min(1140px,92%);margin-inline:auto}
+  section{padding:84px 0}
+  h1,h2,h3{line-height:1.2}
+  h2{font-size:clamp(1.7rem,3vw,2.3rem);margin-bottom:12px}
+  .eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  .lead{color:var(--muted);max-width:640px}
+  .center{text-align:center}
+  .center .lead{margin-inline:auto}
+
+  .btn{display:inline-block;padding:13px 28px;border-radius:50px;font-weight:600;font-size:.95rem;transition:.25s;border:2px solid transparent;cursor:pointer}
+  .btn-primary{background:var(--accent);color:#04202b}
+  .btn-primary:hover{background:#12cdee;transform:translateY(-2px)}
+  .btn-outline{border-color:#fff;color:#fff}
+  .btn-outline:hover{background:#fff;color:var(--blue)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);box-shadow:0 2px 14px rgba(0,0,0,.06)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{font-size:1.4rem;font-weight:800;color:var(--blue);letter-spacing:-.5px}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+  nav a{font-weight:500;font-size:.95rem}
+  nav a:hover{color:var(--accent)}
+  .menu-toggle{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--blue)}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--blue-dark),var(--blue) 60%,#1769c9);color:#fff;padding:110px 0 100px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(0,184,217,.35),transparent 70%)}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;position:relative;z-index:1}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);margin-bottom:18px}
+  .hero p{font-size:1.1rem;color:#d6e3fa;max-width:540px;margin-bottom:30px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero-card{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:30px;backdrop-filter:blur(6px)}
+  .hero-card ul{list-style:none}
+  .hero-card li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.15);display:flex;gap:10px}
+  .hero-card li:last-child{border:0}
+  .hero-card li::before{content:"✓";color:var(--accent);font-weight:700}
+
+  /* Stats */
+  .stats{background:var(--bg);padding:50px 0}
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .stats strong{display:block;font-size:2.2rem;color:var(--blue)}
+  .stats span{color:var(--muted);font-size:.95rem}
+
+  /* Services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
+  .card{background:var(--white);border:1px solid #e4eaf3;border-radius:var(--radius);padding:32px 28px;transition:.3s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .icon{width:54px;height:54px;border-radius:12px;background:#e6f7fb;display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px}
+  .card h3{font-size:1.15rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* About */
+  .about{background:var(--bg)}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .about-box{background:linear-gradient(135deg,var(--blue),#1769c9);border-radius:var(--radius);min-height:340px;display:grid;place-items:center;color:#fff;text-align:center;padding:30px}
+  .about-box h3{font-size:1.5rem;margin-bottom:8px}
+  .checks{list-style:none;margin:22px 0 28px}
+  .checks li{padding:6px 0 6px 30px;position:relative}
+  .checks li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+  /* Process */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:46px}
+  .step{text-align:center;padding:10px}
+  .step b{display:grid;place-items:center;width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--blue);color:#fff;font-size:1.1rem}
+  .step p{color:var(--muted);font-size:.93rem}
+
+  /* CTA */
+  .cta{background:linear-gradient(135deg,var(--blue-dark),var(--blue));color:#fff;text-align:center}
+  .cta p{color:#d6e3fa;max-width:560px;margin:0 auto 28px}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;margin-top:40px}
+  .contact-info p{margin-bottom:14px;color:var(--muted)}
+  .contact-info strong{color:var(--ink);display:block}
+  form{display:grid;gap:14px}
+  input,textarea{width:100%;padding:14px 16px;border:1px solid #d5ddea;border-radius:10px;font:inherit;background:#fff}
+  input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+  textarea{min-height:130px;resize:vertical}
+  form button{justify-self:start;border:0}
+
+  /* Footer */
+  footer{background:#071a3d;color:#aebbd6;padding:56px 0 24px;font-size:.93rem}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:34px}
+  footer h4{color:#fff;margin-bottom:14px}
+  footer li{list-style:none;margin-bottom:8px}
+  footer a:hover{color:var(--accent)}
+  .copy{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center}
+
+  @media(max-width:900px){
+    section{padding:64px 0}
+    .hero-grid,.about-grid,.contact-grid,.foot-grid{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr 1fr}
+    .stats-grid,.steps{grid-template-columns:1fr 1fr}
+    .menu-toggle{display:block}
+    nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:16px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+    nav ul.open{display:flex}
+  }
+  @media(max-width:600px){
+    .cards,.steps{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="#" class="logo">Comtech<span>Concern</span></a>
+    <nav aria-label="Main navigation">
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <ul id="menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">How We Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Technology That Keeps Your Business Moving</h1>
+        <p>Comtech Concern builds software, secures networks and supports IT teams so you can focus on growth instead of downtime.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Request a Free Consultation</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Why choose us">
+        <ul>
+          <li>Custom software built around your workflow</li>
+          <li>Secure, monitored and well-documented networks</li>
+          <li>Fast support from a team that answers</li>
+          <li>Clear pricing with no hidden costs</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Company highlights">
+    <div class="container stats-grid">
+      <div><strong>10+</strong><span>Years of experience</span></div>
+      <div><strong>300+</strong><span>Projects delivered</span></div>
+      <div><strong>150+</strong><span>Happy clients</span></div>
+      <div><strong>24/7</strong><span>Support availability</span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container center">
+      <span class="eyebrow">What We Do</span>
+      <h2>IT Services Built for Real Business Needs</h2>
+      <p class="lead">From first idea to daily support, we cover the full technology stack your company relies on.</p>
+
+      <div class="cards" style="text-align:left">
+        <article class="card">
+          <div class="icon">💻</div>
+          <h3>Custom Software Development</h3>
+          <p>Web apps, internal tools and business systems designed to fit the way your team actually works.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>Website Design &amp; Development</h3>
+          <p>Fast, responsive and search-friendly websites that turn visitors into enquiries.</p>
+        </article>
+        <article class="card">
+          <div class="icon">📡</div>
+          <h3>Networking &amp; Infrastructure</h3>
+          <p>Office networks, servers, Wi-Fi and cabling planned, installed and maintained properly.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🔒</div>
+          <h3>Cybersecurity</h3>
+          <p>Firewalls, backups, access control and security audits that protect your data and reputation.</p>
+        </article>
+        <article class="card">
+          <div class="icon">☁️</div>
+          <h3>Cloud &amp; Hosting</h3>
+          <p>Reliable hosting, migration and cloud setup with performance and cost kept under control.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🛠️</div>
+          <h3>Managed IT Support</h3>
+          <p>Ongoing monitoring, maintenance and a helpdesk that fixes problems before they slow you down.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-box">
+        <div>
+          <h3>Your Technology Partner</h3>
+          <p>Practical solutions. Honest advice. Long-term support.</p>
+        </div>
+      </div>
+      <div>
+        <span class="eyebrow">About Comtech Concern</span>
+        <h2>We Solve IT Problems, Not Create New Ones</h2>
+        <p class="lead">Comtech Concern is a technology company helping organizations of every size plan, build and manage their IT. We keep things simple: understand the problem, recommend what works, deliver on time and stay available afterwards.</p>
+        <ul class="checks">
+          <li>Experienced engineers and developers</li>
+          <li>Transparent quotes and clear timelines</li>
+          <li>Solutions that scale as you grow</li>
+          <li>Dedicated after-sales support</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Talk to Our Team</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container center">
+      <span class="eyebrow">How We Work</span>
+      <h2>A Simple Process From Idea to Launch</h2>
+      <p class="lead">No confusion, no surprises. Here is what working with us looks like.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Discover</h3><p>We learn your goals, challenges and existing systems.</p></div>
+        <div class="step"><b>2</b><h3>Plan</h3><p>You get a clear scope, timeline and fixed quote.</p></div>
+        <div class="step"><b>3</b><h3>Build</h3><p>We develop, install and test with regular updates.</p></div>
+        <div class="step"><b>4</b><h3>Support</h3><p>We train your team and stay available after launch.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Upgrade Your IT?</h2>
+      <p>Tell us what you need and we will get back with a practical plan and a clear quote.</p>
+      <a href="#contact" class="btn btn-primary">Start Your Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="center">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's Talk About Your Project</h2>
+        <p class="lead">Send us a message and our team will reply within one business day.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Address</strong>Your Street, City, Country</p>
+          <p><strong>Phone</strong><a href="tel:+9771000000">+977-1-0000000</a></p>
+          <p><strong>Email</strong><a href="mailto:info@example.com">info@example.com</a></p>
+          <p><strong>Hours</strong>Sunday – Friday, 9:00 AM – 6:00 PM</p>
+        </div>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <input type="tel" name="phone" placeholder="Phone number">
+          <textarea name="message" placeholder="How can we help?" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo" style="color:#fff">Comtech<span>Concern</span></a>
+        <p style="margin-top:12px;max-width:320px">Software, networking and managed IT services for businesses that depend on technology.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Software Development</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Networking</a></li>
+          <li><a href="#services">Cybersecurity</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#process">How We Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 Comtech Concern. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
